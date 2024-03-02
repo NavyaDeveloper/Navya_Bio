@@ -48,6 +48,10 @@
             var linkFiveURL = "https://navyadevops.hashnode.dev/";
             var linkFiveIcon = "fa fa-book";
 
+            var linkSixTitle = "Twitter";
+            var linkSixURL = "https://twitter.com/NavyaDevops";
+            var linkSixIcon = "fa fa-twitter";
+
             // Don't worry about any of the rest of this file unless you need to change the HTML or Javascript...
         </script>
         <div id="profile"></div>
@@ -66,6 +70,9 @@
             </a>
             <a class="link" href="#" target="_blank" rel="noopener" id="linkFive">
                 <i class="" aria-hidden="true" id="iconFive"></i>
+            </a>
+            <a class="link" href="#" target="_blank" rel="noopener" id="linkSix">
+                <i class="" aria-hidden="true" id="iconSix"></i>
             </a>
         </div>
         <p id="credit"></p>
@@ -89,6 +96,10 @@
 
             document.getElementById("linkFive").href = linkFiveURL;
             document.getElementById("linkFive").innerHTML = "<i class='" + linkFiveIcon + "' id='iconFive'></i> " + linkFiveTitle;
+
+            document.getElementById("linkSix").href = linkSixURL;
+            document.getElementById("linkSix").innerHTML = "<i class='" + linkSixIcon + "' id='iconSix'></i> " + linkSixTitle;
+
 
             // Disable credit text based on settings
             if (disableCredit == true) {
